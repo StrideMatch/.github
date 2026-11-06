@@ -1,5 +1,5 @@
-name: 🔧 Tâche technique
-description: Nettoyage, refacto, infra, dette technique, mise à jour de dépendances
+name: 🔧 Tech task
+description: Cleanup, refactoring, infrastructure, tech debt, dependency upgrades
 title: "[Tech] "
 type: Task
 projects: ["StrideMatch/2"]
@@ -7,20 +7,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        ⚠️ **Ne colle jamais de secret** (mot de passe, token, clé, `.env`) dans une issue : indique seulement *où* il se trouve.
+        ⚠️ **Never paste secrets** (passwords, tokens, keys, `.env` files) in an issue: only say *where* they are.
 
   - type: textarea
     id: context
     attributes:
-      label: Contexte
-      description: Pourquoi cette tâche ? Quel problème actuel ?
+      label: Context
+      description: Why this task? What is the current problem?
     validations:
       required: true
 
   - type: textarea
     id: todo
     attributes:
-      label: À faire
+      label: To do
       placeholder: |
         - [ ] …
         - [ ] …
@@ -30,14 +30,14 @@ body:
   - type: textarea
     id: done
     attributes:
-      label: Définition de « terminé »
-      placeholder: "ex. la CI passe, la doc est à jour, la branche est supprimée"
+      label: Definition of done
+      placeholder: "e.g. CI passes, docs are updated, branch is deleted"
 
   - type: checkboxes
     id: risks
     attributes:
-      label: Risques
+      label: Risks
       options:
-        - label: Touche la prod (déploiement, migration de base, config AWS/Amplify)
-        - label: Change une API utilisée par d'autres repos (fronts, app mobile, MCP)
-        - label: Nécessite une coordination avec quelqu'un d'autre
+        - label: Touches production (deployment, database migration, AWS/Amplify config)
+        - label: Changes an API used by other repos (front-ends, mobile app, MCP)
+        - label: Needs coordination with someone else

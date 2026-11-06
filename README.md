@@ -1,22 +1,22 @@
-# StrideMatch — configuration GitHub de l'organisation
+# StrideMatch — organization GitHub config
 
-Ce repo spécial `.github` fournit des fichiers par défaut à **tous les repos de l'organisation**
-qui n'ont pas les leurs.
+This special `.github` repository provides default files to **every repository in the organization**
+that doesn't have its own.
 
-## Templates d'issue (`.github/ISSUE_TEMPLATE/`)
+## Issue templates (`.github/ISSUE_TEMPLATE/`)
 
-| Template | Type | Label | Usage |
+| Template | Type | Label | Use for |
 |---|---|---|---|
-| 🐛 Bug | Bug | `bug` | Quelque chose ne marche pas |
-| ✨ Feature | Feature | `enhancement` | Nouvelle fonctionnalité / amélioration produit |
-| 🔧 Tâche technique | Task | — | Nettoyage, refacto, infra, dette technique |
+| 🐛 Bug | Bug | `bug` | Something doesn't work |
+| ✨ Feature | Feature | `enhancement` | New feature / product improvement |
+| 🔧 Tech task | Task | — | Cleanup, refactoring, infrastructure, tech debt |
 
-Chaque issue créée avec un template est **ajoutée automatiquement au projet « Backlog »**
-(`projects: ["StrideMatch/2"]`). Si le projet change de numéro, mettre à jour les 3 fichiers.
+Every issue created from a template is **automatically added to the "Backlog" project**
+(`projects: ["StrideMatch/2"]`). If the project number changes, update the 3 files.
 
-Les issues vierges sont désactivées (`config.yml`) pour que tout passe par un template.
+Blank issues are disabled (`config.yml`) so that everything goes through a template.
 
-⚠️ Ce repo est **public** (exigence GitHub pour les fichiers par défaut). N'y mettre que des
-templates et de la config générique, jamais d'information interne.
+⚠️ This repository is **public** (GitHub requires it for default files). Only put templates and
+generic configuration here, never internal information.
 
-Un repo qui a son propre dossier `.github/ISSUE_TEMPLATE/` n'utilise plus ces templates.
+A repository with its own `.github/ISSUE_TEMPLATE/` folder no longer uses these templates.

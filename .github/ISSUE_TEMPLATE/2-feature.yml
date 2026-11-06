@@ -1,5 +1,5 @@
 name: ✨ Feature
-description: Une nouvelle fonctionnalité ou une amélioration produit
+description: A new feature or a product improvement
 title: "[Feature] "
 type: Feature
 labels: ["enhancement"]
@@ -8,23 +8,23 @@ body:
   - type: textarea
     id: problem
     attributes:
-      label: Quel problème ou quel besoin ?
-      description: Pour qui (coureur, magasin, admin…) et pourquoi c'est utile.
-      placeholder: "En tant que gérant de magasin, je veux … pour …"
+      label: What problem or need?
+      description: For whom (runner, store, admin…) and why it matters.
+      placeholder: "As a store manager, I want … so that …"
     validations:
       required: true
 
   - type: textarea
     id: proposal
     attributes:
-      label: Proposition
-      description: Ce que tu imagines. Maquettes ou liens Figma bienvenus.
+      label: Proposal
+      description: What you have in mind. Mockups or Figma links welcome.
 
   - type: textarea
     id: acceptance
     attributes:
-      label: Critères d'acceptation
-      description: Comment sait-on que c'est terminé ?
+      label: Acceptance criteria
+      description: How do we know it's done?
       placeholder: |
         - [ ] …
         - [ ] …
@@ -32,4 +32,4 @@ body:
   - type: textarea
     id: notes
     attributes:
-      label: Contexte, contraintes, liens
+      label: Context, constraints, links
