@@ -1,0 +1,35 @@
+name: ✨ Feature
+description: Une nouvelle fonctionnalité ou une amélioration produit
+title: "[Feature] "
+type: Feature
+labels: ["enhancement"]
+projects: ["StrideMatch/2"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Quel problème ou quel besoin ?
+      description: Pour qui (coureur, magasin, admin…) et pourquoi c'est utile.
+      placeholder: "En tant que gérant de magasin, je veux … pour …"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition
+      description: Ce que tu imagines. Maquettes ou liens Figma bienvenus.
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d'acceptation
+      description: Comment sait-on que c'est terminé ?
+      placeholder: |
+        - [ ] …
+        - [ ] …
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Contexte, contraintes, liens

@@ -1,0 +1,43 @@
+name: 🔧 Tâche technique
+description: Nettoyage, refacto, infra, dette technique, mise à jour de dépendances
+title: "[Tech] "
+type: Task
+projects: ["StrideMatch/2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Ne colle jamais de secret** (mot de passe, token, clé, `.env`) dans une issue : indique seulement *où* il se trouve.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte
+      description: Pourquoi cette tâche ? Quel problème actuel ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: À faire
+      placeholder: |
+        - [ ] …
+        - [ ] …
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Définition de « terminé »
+      placeholder: "ex. la CI passe, la doc est à jour, la branche est supprimée"
+
+  - type: checkboxes
+    id: risks
+    attributes:
+      label: Risques
+      options:
+        - label: Touche la prod (déploiement, migration de base, config AWS/Amplify)
+        - label: Change une API utilisée par d'autres repos (fronts, app mobile, MCP)
+        - label: Nécessite une coordination avec quelqu'un d'autre
